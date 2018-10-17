@@ -2,14 +2,14 @@ set noswapfile
 syntax on
 colorscheme desert
 
-call plug#begin()	
-Plug 'andreypopp/vim-colors-plain'
-call plug#end()
+"call plug#begin()	
+"Plug 'andreypopp/vim-colors-plain'
+"call plug#end()
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 set background=light 
-colorscheme plain
+"colorscheme plain
 
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 
