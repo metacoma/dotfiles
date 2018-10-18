@@ -1,17 +1,8 @@
 set noswapfile
 syntax on
-colorscheme desert
+set tabstop=2 shiftwidth=2 expandtab softtabstop=0
+autocmd FileType * setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
-"call plug#begin()	
-"Plug 'andreypopp/vim-colors-plain'
-"call plug#end()
-
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-set background=light 
-"colorscheme plain
-
-set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 function! ResCur()
   if line("'\"") <= line("$")
@@ -25,4 +16,5 @@ augroup resCur
   autocmd BufWinEnter * call ResCur()
 augroup END
 set paste
+
 
