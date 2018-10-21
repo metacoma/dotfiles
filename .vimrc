@@ -18,3 +18,4 @@ augroup END
 set paste
 
 
+autocmd BufWritePre * %s/\s\+$//e
